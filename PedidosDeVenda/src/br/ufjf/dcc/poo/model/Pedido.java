@@ -9,62 +9,59 @@ public class Pedido {
 	private String vendedor;
 	private String status;
 	private String observacoes;
-	private ArrayList<Cliente> clientes;
-	private itenPedido itenPedido;
-
+	private Cliente clientes;
+	private ArrayList<itenPedido> itensPedidos;
+	
 	public Date getDataPedido() {
 		return dataPedido;
 	}
-
+	
 	public void setDataPedido(Date dataPedido) {
 		this.dataPedido = dataPedido;
 	}
-
+	
 	public String getVendedor() {
 		return vendedor;
 	}
-
+	
 	public void setVendedor(String vendedor) {
 		this.vendedor = vendedor;
 	}
-
+	
 	public String getStatus() {
 		return status;
 	}
-
+	
 	public void setStatus(String status) {
 		this.status = status;
 	}
-
+	
 	public String getObservacoes() {
 		return observacoes;
 	}
-
+	
 	public void setObservacoes(String observacoes) {
 		this.observacoes = observacoes;
 	}
-
-	public ArrayList<Cliente> getClientes() {
+	
+	public Cliente getClientes() {
 		return clientes;
 	}
-
-	public void setClientes(ArrayList<Cliente> clientes) {
+	
+	public void setClientes(Cliente clientes) {
 		this.clientes = clientes;
 	}
-
-	public itenPedido getItenPedido() {
-		return itenPedido;
+	
+	public ArrayList<itenPedido> getItensPedidos() {
+		return itensPedidos;
+	}
+	
+	public void setItensPedidos(ArrayList<itenPedido> itensPedidos) {
+		this.itensPedidos = itensPedidos;
 	}
 
-	public void setItenPedido(itenPedido itenPedido) {
-		this.itenPedido = itenPedido;
-	}
-
-	public void encerraPedido() {
-
-	}
-
-	public void cancelaPedido() {
-
-	}
+	public void encerrarPedido() {}
+	
+	public void cancelarPedido() {}
+	
 }

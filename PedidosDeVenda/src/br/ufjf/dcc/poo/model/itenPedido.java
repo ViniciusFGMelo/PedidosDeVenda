@@ -1,13 +1,12 @@
 package br.ufjf.dcc.poo.model;
 
-import java.util.ArrayList;
 
 public class itenPedido {
 
 	private int quantidade;
 	private double preco;
-	private  ArrayList<Pedido> pedidos;
-	private ArrayList<Produto> produtos;
+	private Pedido pedidos;
+	private Produto produto;
 	
 	public int getQuantidade() {
 		return quantidade;
@@ -25,20 +24,20 @@ public class itenPedido {
 		this.preco = preco;
 	}
 	
-	public ArrayList<Pedido> getPedidos() {
+	public Pedido getPedidos() {
 		return pedidos;
 	}
 	
-	public void setPedidos(ArrayList<Pedido> pedidos) {
+	public void setPedidos(Pedido pedidos) {
 		this.pedidos = pedidos;
 	}
 	
-	public ArrayList<Produto> getProdutos() {
-		return produtos;
+	public Produto getProduto() {
+		return produto;
 	}
-
-	public void setProdutos(ArrayList<Produto> produtos) {
-		this.produtos = produtos;
+	
+	public void setProduto(Produto produto) {
+		this.produto = produto;
 	}
 	
 	public int incluirItem() {
@@ -49,4 +48,5 @@ public class itenPedido {
 		return 0;
 	}
 	
+
 }

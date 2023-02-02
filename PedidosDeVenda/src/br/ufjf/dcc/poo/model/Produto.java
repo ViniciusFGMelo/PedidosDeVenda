@@ -1,11 +1,13 @@
 package br.ufjf.dcc.poo.model;
 
+import java.util.ArrayList;
+
 public class Produto {
 
 	private String nomeProduto;
 	private int peso;
 	private int qtdeDisponivel;
-	private itenPedido itenPedido;
+	private ArrayList<itenPedido> itenPedidos;
 	
 	public String getNomeProduto() {
 		return nomeProduto;
@@ -31,16 +33,16 @@ public class Produto {
 		this.qtdeDisponivel = qtdeDisponivel;
 	}
 	
-	public itenPedido getItenPedido() {
-		return itenPedido;
+	public ArrayList<itenPedido> getItenPedidos() {
+		return itenPedidos;
 	}
 	
-	public void setItenPedido(itenPedido itenPedido) {
-		this.itenPedido = itenPedido;
+	public void setItenPedidos(ArrayList<itenPedido> itenPedidos) {
+		this.itenPedidos = itenPedidos;
 	}
 	
-	public Produto consultaProduto() {
-		return 0;
+	public Produto consultarProduto() {
+		return null;
 	}
 	
 }

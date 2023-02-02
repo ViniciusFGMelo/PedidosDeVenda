@@ -7,10 +7,6 @@ public abstract class Pessoa {
 	private String nome;
 	private Date dataNas;
 	
-	public int calculaIdade() {
-		return 0;
-	}
-
 	public String getNome() {
 		return nome;
 	}
@@ -27,5 +23,8 @@ public abstract class Pessoa {
 		this.dataNas = dataNas;
 	}
 	
+	public int calculaIdade() {
+		return 0;
+	}
 	
 }
